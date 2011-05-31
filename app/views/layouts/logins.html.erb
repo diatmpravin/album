@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Stories: <%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'scaffold' ,'pravincss',:media=>"all"%>
+  <%= javascript_include_tag :defaults %>
+</head>
+<body >
+
+<div id="header"></div>
+<div id="style1"></div>
+<div id="style2"></div>
+<div id="style3"></div>
+<div id="menu">
+
+  <ul class="navigation round">
+    <li><%= link_to 'Home', :controller=>"collections", :action=>"index" %></li>
+    <li><%= link_to 'Login', :controller=>"logins", :action=>"new" %></li>
+    <li><%= link_to 'SignUp', :controller=>"signups", :action=>"new" %></li>
+    <li><%= link_to 'About Us', :controller=>"page", :action=>"about" %></li>
+    <li><%= link_to 'Contact Us', :controller=>"page", :action=>"contact" %></li>
+    <li><%= link_to 'Logout', :controller=>"logins", :action=>"logout" %></li>
+  </ul>
+
+</div>
+<div id="cotainer">
+
+<p style="color: green"><%= notice %></p>
+
+<%= yield %>
+</div>
+
+<div id="seprator"></div>
+
+<div id="footer">
+
+  <ul class="footer_navigation round">
+    <li><%= link_to 'Home', :controller=>"collections", :action=>"index" %></li>
+    <li><%= link_to 'Login', :controller=>"logins", :action=>"new" %></li>
+    <li><%= link_to 'SignUp', :controller=>"signups", :action=>"new" %></li>
+    <li><%= link_to 'About Us', :controller=>"stories", :action=>"index" %></li>
+    <li><%= link_to 'Contact Us', :controller=>"stories", :action=>"index" %></li>
+    <li><%= link_to 'Logout', :controller=>"logins", :action=>"logout" %></li>
+  </ul>
+
+  
+</div>
+
+</body>
+</html>

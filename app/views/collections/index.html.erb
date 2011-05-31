@@ -1,0 +1,20 @@
+<h3>Create a simple application where user can have many albums and album can have many photos. User should be able to upload multiple photos while creating new album by clicking on "Add More Photo". Photos can also have tags(comma separated). Thumbnails must be created for each photo after uploading. Album and associated photos and tags should be created simultaneously, use multi-model approach here.</h3>
+
+<table>
+
+<% @collections.each do |collection| %>
+  <tr>
+    <td><%=h collection.title %></td>
+    <td width="5%"></td>
+    <td><%=image_tag collection.image, :class=>'image_size' %></td>
+    <td width="5%"></td>
+    <td><%=h collection.description %></td>
+    <td width="5%"></td>
+    <td><%=h collection.upload_at %></td>
+    <td width="5%"></td>
+    
+  </tr>
+<% end %>
+</table>
+
+<br />

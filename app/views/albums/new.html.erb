@@ -1,0 +1,37 @@
+<div style="font-family:'Trebuchet MS'; color:#006600; font-size:14px;">
+    <p align="right">You are loigin width Id: <%= session[:user_id] %></p>
+  </div>
+  <div style="font-family:'Trebuchet MS'; color:#0000FF; font-size:14px;">
+    <p align="right"><%= Time.now() %></p>
+  </div>
+
+
+<h1>Create New album with Name and Description</h1>
+
+<% form_for(@album, :html => {:multipart => true}) do |f| %>
+  <div id="vote_link">
+      <%= add_image(f) %>
+   </div>   
+  <%= f.error_messages %>
+
+
+    <p>
+    <%= f.label :user %>:
+    <%= f.text_field :user %>
+  </p>
+
+
+  <p>
+    <%= f.label :name %>:
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :description %>:
+    <%= f.text_field :description %>
+  </p>
+  <p>
+    <%= f.submit 'Create New Album' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', albums_path %>

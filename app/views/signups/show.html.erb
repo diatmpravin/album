@@ -1,0 +1,28 @@
+<p>
+  <b>Name:</b>
+  <%=h @signup.name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @signup.email %>
+</p>
+
+<p>
+  <b>Password:</b>
+  <%=h @signup.password %>
+</p>
+
+<p>
+  <b>Confirm password:</b>
+  <%=h @signup.confirm_password %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%=h @signup.phone %>
+</p>
+
+
+<%= link_to 'Edit', edit_signup_path(@signup) %> |
+<%= link_to 'Back', signups_path %>

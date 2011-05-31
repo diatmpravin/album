@@ -1,0 +1,23 @@
+<p>
+  <b>Title:</b>
+  <%=h @collection.title %>
+</p>
+
+<p>
+  <b>Image:</b>
+  <%=h @collection.image %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @collection.description %>
+</p>
+
+<p>
+  <b>Upload at:</b>
+  <%=h @collection.upload_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_collection_path(@collection) %> |
+<%= link_to 'Back', collections_path %>

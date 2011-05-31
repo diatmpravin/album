@@ -1,0 +1,34 @@
+<div style="font-family:'Trebuchet MS'; color:#006600; font-size:14px;">
+    <p align="right">You are loigin width Id: <%= session[:user_id] %></p>
+  </div>
+  <div style="font-family:'Trebuchet MS'; color:#0000FF; font-size:14px;">
+    <p align="right"><%= Time.now() %></p>
+  </div>
+
+<h1>Your All Created albums</h1>
+
+<table>
+  <tr style="font-family:'Trebuchet MS'; color:#006666; font-size:18px;">
+    <th>Name</th>
+    <td width="8%"></td>
+    <th>Description</th>
+  </tr>
+
+<% @albums.each do |album| %>
+  <tr>
+    <td><%=h album.name %></td>
+    <td width="8%"></td>
+    <td><%=h album.description %></td>
+    <td width="8%"></td>
+    <td><div id="vote_links"><%= link_to 'List All Photo', album %></div></td>
+    <td width="10%"></td>
+    <td><div id="vote_links"><%= link_to 'Add New Photo', edit_album_path(album) %></div></td>
+    <td width="10%"></td>
+    <td><div id="vote_links"><%= link_to 'Destroy', album, :confirm => 'Are you sure?', :method => :delete %></div></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<div id="vote_link"><%= link_to 'Create New album', new_album_path %></div>

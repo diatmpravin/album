@@ -1,0 +1,18 @@
+<% @album.images.each do |image| %>
+    <%= image.tag %>
+    <%= image_tag image.data.url, :class=>'image_size' %>
+<% end %>
+
+<p>
+  <b>Name:</b>
+  <%=h @album.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @album.description %>
+</p>
+
+
+<div id="vote_link"><%= link_to 'Edit', edit_album_path(@album) %> </br></br> </div>
+<div id="vote_link"><%= link_to 'Back', albums_path %></div>
