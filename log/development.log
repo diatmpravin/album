@@ -400,3 +400,113 @@ ActionController::RoutingError (No route matches "/system/datas/10/original/0802
   
 
 Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2011-06-01 09:49:53) [GET]
+  [4;36;1mAlbum Load (63.0ms)[0m   [0;1mSELECT * FROM `albums` [0m
+Rendering template within layouts/logins
+Rendering albums/index
+  [4;35;1mAlbum Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Completed in 625ms (View: 515, DB: 79) | 200 OK [http://localhost/albums]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#new (for 127.0.0.1 at 2011-06-01 09:50:01) [GET]
+  [4;36;1mAlbum Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendering template within layouts/logins
+Rendering albums/new
+  [4;35;1mImage Columns (46.0ms)[0m   [0mSHOW FIELDS FROM `images`[0m
+Rendered albums/_image (0.0ms)
+Completed in 265ms (View: 188, DB: 62) | 200 OK [http://localhost/albums/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2011-06-01 09:50:07) [GET]
+  [4;36;1mAlbum Load (0.0ms)[0m   [0;1mSELECT * FROM `albums` [0m
+Rendering template within layouts/logins
+Rendering albums/index
+  [4;35;1mAlbum Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://localhost/albums]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2011-06-01 09:50:07) [GET]
+  [4;36;1mAlbum Load (0.0ms)[0m   [0;1mSELECT * FROM `albums` [0m
+Rendering template within layouts/logins
+Rendering albums/index
+  [4;35;1mAlbum Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/albums]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2011-06-01 09:52:14) [GET]
+  [4;36;1mAlbum Load (0.0ms)[0m   [0;1mSELECT * FROM `albums` [0m
+Rendering template within layouts/logins
+Rendering albums/index
+  [4;35;1mAlbum Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/albums]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#new (for 127.0.0.1 at 2011-06-01 09:52:16) [GET]
+  [4;36;1mAlbum Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendering template within layouts/logins
+Rendering albums/new
+  [4;35;1mImage Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `images`[0m
+Rendered albums/_image (16.0ms)
+Completed in 187ms (View: 109, DB: 16) | 200 OK [http://localhost/albums/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#new (for 127.0.0.1 at 2011-06-01 09:52:17) [GET]
+  [4;36;1mAlbum Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendering template within layouts/logins
+Rendering albums/new
+  [4;35;1mImage Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `images`[0m
+Rendered albums/_image (0.0ms)
+Completed in 203ms (View: 141, DB: 0) | 200 OK [http://localhost/albums/new]
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#about (for 127.0.0.1 at 2011-06-01 09:52:20) [GET]
+Rendering template within layouts/logins
+Rendering page/about
+Completed in 47ms (View: 47, DB: 16) | 200 OK [http://localhost/page/about]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#new (for 127.0.0.1 at 2011-06-01 09:52:22) [GET]
+  [4;36;1mLogin Columns (63.0ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+Rendering template within layouts/logins
+Rendering logins/new
+Completed in 172ms (View: 62, DB: 63) | 200 OK [http://localhost/logins/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CollectionsController#index (for 127.0.0.1 at 2011-06-01 09:52:24) [GET]
+  [4;35;1mCollection Load (47.0ms)[0m   [0mSELECT * FROM `collections` [0m
+Rendering template within layouts/logins
+Rendering collections/index
+  [4;36;1mCollection Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `collections`[0m
+Completed in 156ms (View: 62, DB: 63) | 200 OK [http://localhost/collections]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CollectionsController#index (for 127.0.0.1 at 2011-06-01 09:53:47) [GET]
+  [4;36;1mCollection Load (0.0ms)[0m   [0;1mSELECT * FROM `collections` [0m
+Rendering template within layouts/logins
+Rendering collections/index
+  [4;35;1mCollection Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `collections`[0m
+Completed in 93ms (View: 63, DB: 15) | 200 OK [http://localhost/]
